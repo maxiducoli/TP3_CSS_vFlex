@@ -1,0 +1,317 @@
+@font-face {
+font-family: "My Font";
+src: url("./fonts/Landliebe.ttf") ;
+font-style: normal;
+font-weight: normal;
+}
+body {
+  font-family: "My Font";
+  font-size: 20px;
+  margin: 0px;
+  padding: 0px;
+  background:auto;
+}
+.BannerContainer{
+  width: 1000px;
+  /* border: 1px solid #FF0000; */
+  margin: auto;
+  justify-content:space-around;
+ 
+}
+.Banner{
+  display:flex;
+  flex-direction: column;
+  justify-content:center;
+  background-color: #9A9CA0;
+ }
+.Header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.NavigationBar ul{
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style-type:none;
+}
+.NavigationBar li{
+  display: flex;
+margin: 10px;
+background-color: #9A9CA0;
+border-radius: 20px;
+}
+.NavigationBar a{
+padding: 10px 20px;
+text-decoration: none;
+color: #FFFFFF;
+}
+.NavigationBar a:hover{
+  background-color: #000000;
+  border-radius: 20px;
+}
+.LearMoreButton:hover{
+  color: #000000;
+}
+/*FIN DEL NAVIGATION */
+
+.HeaderLine{
+  color: gray;
+}
+
+/*COMIENZO DEL BANNER */
+
+.HeaderBannerContainer{
+display: flex;
+flex-direction: column;
+justify-content:space-around;
+width: 1000px;
+/* border: 1px solid #FF0000; */
+margin: auto;
+}
+.BannerImage{
+margin-top: 2%;
+padding:0 25%;
+width:50%;
+}
+.LogoImage{
+  width:15%;
+}
+.Subtitle{
+text-align: center;
+color: #FFFFFF;
+font-weight: normal;
+}
+.HeaderBannerContainer a{ 
+display:inline-block;
+margin: 10px;
+padding: 10px;
+color: #FFFFFF;
+background-color: #9A9CA0;
+border-radius: 1px;
+}
+.HeaderBannerContainer .GetStartedButton { 
+text-decoration: none;
+}
+.HeaderBannerContainer .GetStartedButton:hover { 
+background-color: #000000;
+border-radius: 1px;
+}
+.BannerLinks{
+display: flex;
+justify-content: center;
+}
+/* FIN DEL BANNER */
+
+/*COMIENZO DEL CUERPO 2*/
+
+.Description{
+background-color:#D7D7D7
+}
+.DescriptionColumnsContainer{
+  display: flex;
+  width: 1000px;
+ /*  border: 1px solid #FF0000; */
+  margin: auto;
+}
+.DescriptionColumn{
+flex-direction: column;
+justify-content: center;
+width:25%;
+}
+.DescriptionColumn h1{
+text-align: center;
+}
+.DescriptionColumn a{
+display: flex;
+flex-direction: horizontal;
+justify-content: space-around;
+padding: 10px 20px;
+text-decoration: none;
+color: #FFFFFF;
+font-weight: bold;
+margin: 20%;
+}
+.DescriptionColumn a:hover{
+background-color: #9A9CA0;
+border-radius: 20px;
+}
+
+.DescriptionColumn p{
+  text-align: center;
+  font-weight: bold; 
+  margin-left: 15px;
+  margin-right: 15px;;
+}
+.LineImageContainer{
+display: flex;
+flex-wrap: wrap;
+justify-content: space-around;
+padding: 20px 0 20px 0;
+margin-top: 15%;
+width: 100%;
+}
+.LineImageContainer p{
+  hyphens: auto;
+}
+.LineImageContainer hr{
+width: 100%;
+border: 5px solid #999999;
+z-index: 1;
+margin-top:20%;
+margin-bottom: 20%;
+}
+.CircleImages{
+position: absolute;
+z-index: 2;
+background-color: #FFFFFF;
+border-radius: 100px 100px 100px 100px;
+border: 10px solid #999999;
+}
+
+/*--- FIN DEL CUERPO 2 --*/
+
+/* COMIENZO DEL PORTFOLIO */
+.PortfolioColumns{
+display: flex;
+flex-direction: row;
+width: 1000px;
+/* border: 1px solid #FF0000; */
+margin: auto;
+}
+.PortfolioColumn p{
+margin-bottom: 35px;
+font-weight: bold;
+hyphens: auto;
+}
+.PortfolioColumn h1{
+margin: 0;
+}
+.PortfolioColumn a{
+padding: 10px 20px;
+margin-left: 30px;
+margin-top: 50px;
+text-decoration: none;
+color: #000000;
+}
+.PortfolioColumn a:hover{
+  background-color: #9A9CA0;
+  border-radius: 50px 50px;
+}
+.PortfolioDevelopersColumn, .PortfolioColumn{
+  margin-top: 5%;
+  margin-bottom: 5%;
+  padding: 10px 0 10px 0 ;
+  width:25%;
+}
+.PortfolioDevelopersColumn{
+  text-align: center;
+} 
+.PortfolioDevelopersColumn a{
+  flex-direction:column;
+  justify-content: flex-end;
+  color: #CBCBCB;
+  text-decoration: none;
+  padding: 10px 20px;
+}
+.PortfolioDevelopersColumn a:hover{
+  background-color: #9A9CA0;
+  border-radius: 50px;
+}
+/* FIN DEL PORTFOLIO */
+
+/* COMIENDO DEL FOOTER */
+
+.FooterContainer{
+  /* border: 1px solid #FF0000; */
+  width: 1000px;
+  margin: auto;
+}
+.FooterColumnsContainer{
+  display: flex;
+  justify-content: space-around;
+}
+.Testimonials, .LastestPost, .LastestTwits{
+  flex-wrap: wrap;
+  width: 25%;
+}
+.TestimolialsBox{
+display: flex;
+}
+.TestimolialsBox p{
+justify-content: flex-end;
+padding-left: 5px;
+margin-top:0;
+color: #7F7F7F;
+}
+.TestimolialsBox img{
+justify-content: flex-start;
+}
+.LastestPost p{
+  color: #7F7F7F;
+  }
+.LastestTwitsContent img{
+display: flex;
+justify-content: flex-start;
+padding: 1px;
+}
+.LastestTwitsContent{
+display: flex;
+padding: 1px;
+}
+.LastestTwitsContent p{
+display: flex;
+flex-direction:column;
+justify-content: flex-end;
+padding: 1px;
+margin-top: 0;
+text-align: left;
+hyphens: auto;
+}
+.LastestTwitsContent a{
+display: flex;
+flex-direction: column;
+justify-content: flex-end;
+color: #960000;
+}
+.FooterNavItems{
+display: flex;
+}
+.NavigationBarContainer{
+display: flex;
+justify-content: flex-end;
+/* border: 1px solid #FF0000; */
+width: 1000px;
+margin: 0 auto;
+}
+.FooterNavigationBar ul{
+padding: 0;
+margin: 0;
+list-style-type:none;
+}
+.FooterNavigationBar li{
+margin: 10px;
+}
+.FooterNavigationBar a{
+padding: 10px 20px;
+text-decoration: none;
+color: #9A9CA0;
+font-weight: bold;
+}
+.FooterNavigationBar a:hover{
+  color:#960000;
+}
+/* FIN DEL FOOTER */
+
+
+/* RESPONSIVE */
+
+@media only screen and (width: 280px) {
+
+  .BannerContainer, .DescriptionContainer{
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+}
+
+/*FIN RESPONSIVE */
